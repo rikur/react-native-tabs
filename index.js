@@ -94,7 +94,7 @@ var styles = StyleSheet.create({
         alignItems: 'center',
     },
     hidden: {
-        height: 0,
+        display: 'none',
     },
 });
 
