@@ -59,7 +59,7 @@ class Tabs extends Component {
             });
         }
         return (
-            <View style={[styles.tabbarView, this.props.style, this.state.keyboardUp && styles.hidden]}>
+            <View style={[styles.tabbarView, this.props.style, (this.state.keyboardUp || this.props.hidden) && styles.hidden]}>
                 {React.Children.map(this.props.children.filter(c=>c),(el)=>
                     <TouchableOpacity key={el.props.name+"touch"}
                        testID={el.props.testID}
